@@ -10,11 +10,11 @@ This lesson will introduce the concept of CSS pseudo class selectors by demonstr
 
 The material will be presented as a lecture and demonstration, with opportunities for questions.  It assumes prior instruction in HTML and CSS, and a good understanding of the use of basic CSS selector classes.
 
-####Next:
+##### Next:
 
 The following lesson should cover presence attribute selectors – `[attr]` –  and value attribute selectors `[attr=val]` in similar detail.
 
-####Further exploration:
+##### Further exploration:
 
 * https://css-tricks.com/pseudo-class-selectors/
 * https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
