@@ -1,14 +1,17 @@
 .dynamic-fare:not(input):not(.vis) {
+    color: white;
     font-size: 0;
 }
 
 .trip-day:focus-within,
 .trip-eve:focus-within,
 .trip-mix:focus-within {
+    color: black;
     font-size: initial;
 }
 
 .trip-fare:focus-within {
+    color: black;
     font-size: initial;
 }
 
@@ -23,6 +26,7 @@
 .zone3:focus-within,
 .zone2:focus-within,
 .zone1:focus-within {
+    color: black;
     font-size: initial;
 }
 
@@ -37,17 +41,28 @@
     color: white;
 }
 
+.vis {
+    border: 0;
+    background: rgb(60, 105, 160);
+    color: white;
+}
+
+.vis:hover {
+    background: rgb(161, 196, 240);
+    color: rgb(2, 40, 87);
+}
+
 .dynamic-fare input:not(.zone-btn) {
     background: white;
     height: 0;
-    /* color: white; */
+    color: white;
     font-size: 0;
 }
 
 .dynamic-fare:focus-within input:not(.zone-btn) {
     background: rgb(60, 105, 160);
     height: initial;
-    /* color: white; */
+    color: white;
     font-size: initial;
 }
 
@@ -58,7 +73,14 @@
 }
 
 .dynamic-fare input:not(.vis) {
+    color: white;
     font-size: 0;
+}
+
+.ticket {
+    color: black;
+    font-size: initial;
+    width: 200px;
 }
 
 .fare-btn {
@@ -73,29 +95,22 @@
 
 .fare-btn.step1,
 .zone-btn.zone1 {
-    top: 145px;
+    top: 15px;
 }
 
 .fare-btn.step2,
 .zone-btn.zone2 {
-    top: 185px;
+    top: 55px;
 }
 
 .fare-btn.step3,
 .zone-btn.zone3 {
-    top: 225px;
+    top: 95px;
 }
 
 .fare-btn.step4,
 .zone-btn.zone4 {
-    top: 265px;
-}
-
-.ticket {
-    font-size: initial;
-    width: 200px;
-    position: absolute;
-    left: 250px;
+    top: 135px;
 }
 
 .trip-txt {
