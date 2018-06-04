@@ -1,0 +1,1 @@
+Now we can line our dynamic text up like we did with the buttons.

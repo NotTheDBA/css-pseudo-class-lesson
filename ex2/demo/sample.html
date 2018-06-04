@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+
+    <link rel="stylesheet" href="sample.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container head">
+        <h3 class="logo">
+            <a href="index.html">SEPTA Fare Optimizer</a>
+        </h3>
+        <h5 class="tagline">
+            When does it make sense to buy a SEPTA pass?
+        </h5>
+
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s2">
+                <ul class="ticket">
+                    <li>Monthly</li>
+                    <li>Weekly</li>
+                    <li>10-Trip</li>
+                    <li>Independence Pass</li>
+                    <li>1 Trip (Day)</li>
+                    <li>1 Trip (Evening)</li>
+                </ul>
+            </div>
+            <div class="zone1 zone2 zone3 zone4">
+                <div class="col s2 dynamic-fare zone1">
+                    <input class="btn vis zone-btn zone1" type="button" name="tripZone" value="Zone 1">
+                    <!-- TODO: Do the step below first, then add this class: trip-fare -->
+                    <div class="">
+
+                        <input class="btn vis fare-btn step1" type="button" name="tripFare" value="Fare">
+                        <!-- TODO: Add the CSS, then add the trip-fare class to display-->
+                        <ul class="trip-txt">
+                            <li>$105.00</li>
+                            <li>$28.25</li>
+                            <li>$40.00</li>
+                            <li>$13.00</li>
+                            <li>$5.25</li>
+                            <li>$4.25</li>
+                        </ul>
+                    </div>
+                    <!-- TODO: Add the trip-day class to display-->
+                    <div class="zone1">
+                        <input class="btn vis fare-btn step2" type="button" name="trip-type" value="Day">
+                        <!-- TODO: Add the trip-day class to display-->
+                        <ul class="trip-txt">
+                            <li>20 trips</li>
+                            <li>6 trips</li>
+                            <li>8 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <!-- Add the trip-eve class to display-->
+                    <div class="zone1">
+                        <input class="btn vis fare-btn step3" type="button" name="trip-type" value="Eve">
+                        <!-- Add the trip-eve class to display-->
+                        <ul class="trip-txt">
+                            <li>25 trips</li>
+                            <li>7 trips</li>
+                            <li>10 trips</li>
+                            <li>4 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <div class="trip-mix zone1">
+                        <input class="btn vis fare-btn step4" type="button" name="trip-type" value="Mix">
+                        <ul class="trip-mix trip-txt">
+                            <li>23 trips</li>
+                            <li>6 trips</li>
+                            <li>9 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col s2 dynamic-fare zone2">
+                    <input class="btn vis zone-btn  zone2" type="button" name="tripZone" value="Zone 2">
+                    <!-- Add the trip-day class to display-->
+                    <div class="">
+                        <input class="btn vis fare-btn step1" type="button" name="tripFare" value="Fare">
+                        <!-- Add the trip-fare class to display-->
+                        <ul class="trip-txt">
+                            <li>$144.00</li>
+                            <li>$39.00</li>
+                            <li>$47.50</li>
+                            <li>$13.00</li>
+                            <li>$5.25</li>
+                            <li>$4.25</li>
+                        </ul>
+                    </div>
+                    <!-- Add the trip-day class to display-->
+                    <div class="zone2">
+                        <input class="btn vis fare-btn step2" type="button" name="trip-type" value="Day">
+                        <!-- Add the trip-day class to display-->
+                        <ul class="trip-txt">
+                            <li>28 trips</li>
+                            <li>8 trips</li>
+                            <li>10 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <!-- Add the trip-eve class to display-->
+                    <div class="zone2">
+                        <input class="btn vis fare-btn step3" type="button" name="trip-type" value="Eve">
+                        <!-- Add the trip-eve class to display-->
+                        <ul class="trip-txt">
+                            <li>29 trips</li>
+                            <li>8 trips</li>
+                            <li>10 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <div class="trip-mix zone2">
+                        <input class="btn vis fare-btn step4" type="button" name="trip-type" value="Mix">
+                        <ul class="trip-mix trip-txt">
+                            <li>31 trips</li>
+                            <li>9 trips</li>
+                            <li>10 trips</li>
+                            <li>2 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col s2 dynamic-fare zone3">
+                    <input class="btn vis zone-btn zone3" type="button" name="tripZone" value="Zone 3">
+                    <!-- Add the trip-eve class to display-->
+                    <div class="">
+                        <input class="btn vis fare-btn step1" type="button" name="tripFare" value="Fare">
+                        <!-- Add the trip-fare class to display-->
+                        <ul class="trip-txt">
+                            <li>$174.00</li>
+                            <li>$47.00</li>
+                            <li>$57.50</li>
+                            <li>$13.00</li>
+                            <li>$6.00</li>
+                            <li>$5.25</li>
+                        </ul>
+                    </div>
+                    <!-- Add the trip-day class to display-->
+                    <div class="zone3">
+                        <input class="btn vis fare-btn step2" type="button" name="trip-type" value="Day">
+                        <!-- Add the trip-day class to display-->
+                        <ul class="trip-txt">
+                            <li>29 trips</li>
+                            <li>8 trips</li>
+                            <li>10 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <!-- Add the trip-eve class to display-->
+                    <div class="zone3">
+                        <input class="btn vis fare-btn step3" type="button" name="trip-type" value="Eve">
+                        <ul class="trip-txt">
+                            <li>34 trips</li>
+                            <li>9 trips</li>
+                            <li>11 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <div class="trip-mix zone3">
+                        <input class="btn vis fare-btn step4" type="button" name="trip-type" value="Mix">
+                        <ul class="trip-mix trip-txt">
+                            <li>31 trips</li>
+                            <li>9 trips</li>
+                            <li>11 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col s2 dynamic-fare zone4">
+                    <input class="btn vis zone-btn  zone4" type="button" name="tripZone" value="Zone 4">
+                    <div class="trip-mix">
+                        <input class="btn vis fare-btn step1" type="button" name="tripFare" value="Fare">
+                        <!-- Add the trip-fare class to display-->
+                        <ul class="trip-txt">
+                            <li>$204.00</li>
+                            <li>$55.75</li>
+                            <li>$65.00</li>
+                            <li>$13.00</li>
+                            <li>$6.75</li>
+                            <li>$5.25</li>
+                        </ul>
+                    </div>
+                    <!-- Add the trip-day class to display-->
+                    <div class="zone4">
+                        <input class="btn vis fare-btn step2" type="button" name="trip-type" value="Day">
+                        <!-- Add the trip-day class to display-->
+                        <ul class="trip-txt">
+                            <li>31 trips</li>
+                            <li>9 trips</li>
+                            <li>10 trips</li>
+                            <li>2 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <!-- Add the trip-eve class to display-->
+                    <div class="zone4">
+                        <input class="btn vis fare-btn step3" type="button" name="trip-type" value="Eve">
+                        <!-- Add the trip-eve class to display-->
+                        <ul class="trip-txt">
+                            <li>39 trips</li>
+                            <li>11 trips</li>
+                            <li>13 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                    <div class="trip-mix zone4">
+                        <input class="btn vis fare-btn step4" type="button" name="trip-type" value="Mix">
+                        <ul class="trip-mix trip-txt">
+                            <li>34 trips</li>
+                            <li>10 trips</li>
+                            <li>11 trips</li>
+                            <li>3 trips</li>
+                            <li>1 trip</li>
+                            <li>1 trip</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

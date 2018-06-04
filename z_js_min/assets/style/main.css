@@ -1,0 +1,322 @@
+/*
+Clear Browser-specific defaults.
+*/
+
+@import 'reset.css';
+
+/*
+========================================
+Custom styles
+========================================
+*/
+
+body {
+    font: Helvetica, Arial, sans-serif;
+}
+
+.logo,
+.tagline {
+    font: 'Merriweather', "Times New Roman", Times, serif;
+}
+
+
+/*
+========================================
+Grid
+========================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+.container {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/*
+========================================
+Typography
+========================================
+*/
+
+h1,
+h3,
+h4,
+h5,
+p {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #787f85;
+    font-size: 14px;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+
+/*
+========================================
+Table Styling
+========================================
+*/
+
+th,
+td {
+    padding-bottom: 22px;
+    vertical-align: top;
+}
+
+th {
+    padding-right: 45px;
+    text-align: right;
+    width: 20%;
+}
+
+td {
+    width: 20%;
+}
+
+thead {
+    color: #144B88;
+    line-height: 44px;
+}
+
+thead th {
+    font-size: 28px;
+}
+
+thead td {
+    font-size: 20px;
+}
+
+tbody th {
+    color: rgb(106, 126, 150);
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 22px;
+    /* text-transform: uppercase; */
+}
+
+tbody td {
+    border-top: 1px solid #144B88;
+    padding-top: 21px;
+}
+
+.dynamic-fare {
+    display: none;
+}
+
+.fare-overpriced {
+    color: default;
+}
+
+.fare-breakeven {
+    color: default;
+}
+
+.overpriced {
+    color: maroon;
+}
+
+.breakeven {
+    color: grey;
+}
+
+
+/*adds a "dagger" character to reference in the footnotes*/
+
+.overpriced::before {
+    content: "\2020 ";
+}
+
+
+/*adds a "dagger" character to reference in the footnotes*/
+
+.breakeven::before {
+    content: "\2021 ";
+}
+
+tbody td:first-of-type {
+    padding-right: 15px;
+}
+
+tbody td:last-of-type {
+    padding-left: 15px;
+}
+
+tbody td:only-of-type {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+table a {
+    color: rgb(5, 4, 73);
+}
+
+table h4 {
+    margin-bottom: 0;
+}
+
+.table-numbers {
+    text-align: right;
+}
+
+.header-link a {
+    text-decoration-line: none
+}
+
+.header-link a:visited {
+    color: rgb(106, 126, 150);
+}
+
+
+/*
+========================================
+Primary header
+========================================
+*/
+
+.logo {
+    /* border-top: 4px solid #144B88; */
+    float: left;
+    font-size: 48px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    line-height: 36px;
+    padding: 40px 0 22px 0;
+    font-variant: small-caps;
+}
+
+.logo a {
+    text-decoration-line: none
+}
+
+.logo a:visited {
+    color: #144B88
+}
+
+.tagline {
+    float: right;
+    margin: 40px;
+}
+
+.head {
+    border-top: 4px solid #144B88;
+    /* float: left; */
+    /* font-size: 48px; */
+    /* font-weight: 100; */
+    letter-spacing: .5px;
+    line-height: 36px;
+    padding: 20px 0;
+    /* text-transform: uppercase; */
+}
+
+.head p {
+    font-size: 21px;
+    line-height: 33px;
+}
+
+
+/*
+========================================
+Primary footer
+========================================
+*/
+
+.primary-footer {
+    color: #144B88;
+    font-size: 14px;
+    padding-bottom: 44px;
+    padding-top: 44px;
+}
+
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn-group {
+    /* color: #fff;
+    line-height: 44px; */
+    padding: 0 0 0 300px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin: 0;
+    /* text-transform: uppercase; */
+}
+
+.btn-alt {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+}
+
+.btn-alt:hover {
+    background: #fff;
+    color: rgb(60, 105, 160);
+}
+
+.btn-default {
+    border: 0;
+    background: rgb(60, 105, 160);
+    margin: 0 10px;
+    padding: 11px 30px;
+    font-size: 14px;
+}
+
+.btn-default:hover {
+    background: rgb(161, 196, 240);
+    color: rgb(2, 40, 87);
+}

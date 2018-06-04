@@ -1,0 +1,87 @@
+/* TODO: Review CSS Selectors */
+
+
+/* element selectors
+    - HTML tags only
+    - Affect all tags of that type
+*/
+
+body {}
+
+a {}
+
+input {}
+
+
+/* grouping mutliple selectors together matches any
+element in that group */
+
+h1,
+h2,
+h3,
+h4 {}
+
+
+/* class selectors 
+    - assigned by adding 'class=' to our html tags
+    - affect only elemnents the class is assigned to
+    - affect all elemnents the class is assigned to
+*/
+
+.class {}
+
+.otherclass {}
+
+
+/* id selectors 
+    - assigned by adding 'id=' to our html tags
+    - id values should only be used one
+    - affect exactly one element the id is assigned to
+*/
+
+#firstid {}
+
+#secondid {}
+
+
+/* combining class selectors with other selectors */
+
+
+/* descendant selectors - second selecor is a descendant anywhere of the first selector */
+
+.class .otherclass {}
+
+
+/* optional review: what is the difference between these next two? */
+
+div .class {}
+
+.class div {}
+
+
+/* child selector
+optional review: how is a child selector different from a descendant selector? */
+
+div>.class {}
+
+
+/* sibling selectors
+optional review: what is the diffeence between the two types of sibling selectors?*/
+
+.class+.otherclass {}
+
+.class~.otherclass {}
+
+
+/* joining selectors requires both classes be added to the element  */
+
+div.class {}
+
+.otherclass.class {}
+
+
+/* Bonus, a.k.a. Danger Zone! 
+
+Universal Selector */
+
+* {}

@@ -1,0 +1,1 @@
+Shows how to hide content by styling text.
