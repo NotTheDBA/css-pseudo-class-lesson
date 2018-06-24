@@ -5,6 +5,14 @@
 
 /* TODO: Use focus:within to display some hidden text text */
 
+.dynamic-fare:focus-within {
+    font-size: initial;
+}
+
+
+/* 
+*/
+
 
 /* .trip-fare:focus-within {
     font-size: initial;

@@ -1,0 +1,71 @@
+.dynamic-fare {
+    font-size: 0;
+}
+
+.trip-day:focus-within,
+.trip-eve:focus-within,
+.trip-mix:focus-within,
+.trip-fare:focus-within {
+    font-size: initial;
+}
+
+.dynamic-fare input:not(.zone-btn) {
+    height: 0;
+}
+
+.dynamic-fare:focus-within input:not(.zone-btn) {
+    height: initial;
+}
+
+.dynamic-fare input.fare-btn,
+.dynamic-fare input.zone-btn {
+    background: rgb(60, 105, 160);
+}
+
+.dynamic-fare input.fare-btn:focus,
+.dynamic-fare input.fare-btn:hover,
+.dynamic-fare input.zone-btn:focus,
+.dynamic-fare input.zone-btn:hover {
+    background: rgb(161, 196, 240);
+}
+
+.fare-btn {
+    position: absolute;
+    left: 100px;
+    width: 60px;
+}
+
+.zone-btn {
+    position: absolute;
+    left: 0;
+}
+
+.fare-btn.step1,
+.zone-btn.zone1 {
+    top: 145px;
+}
+
+.fare-btn.step2,
+.zone-btn.zone2 {
+    top: 185px;
+}
+
+.fare-btn.step3,
+.zone-btn.zone3 {
+    top: 225px;
+}
+
+.fare-btn.step4,
+.zone-btn.zone4 {
+    top: 265px;
+}
+
+.trip-txt {
+    position: absolute;
+    left: 400px;
+}
+
+.ticket {
+    font-size: initial;
+    width: 200px;
+}
