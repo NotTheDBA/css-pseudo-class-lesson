@@ -27,6 +27,7 @@ The material will be presented as a lecture and demonstration, with opportunitie
 
 [Bonus](ex99/demo.md): Making It Work vs. Making It Clean
 
+![screenshot](./septafares-2.JPG)
 
 ##### Next:
 
